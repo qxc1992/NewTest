@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+    <item
+        android:id="@+id/setting"
+        android:title="设置"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/absorbed"
+        android:title="今日关注"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/share"
+        android:title="日贴分享"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/suggest"
+        android:title="意见反馈"
+        app:showAsAction="never" />
+
+    //com.github.clans.fab.FloatingActionMenu
+    <item
+        android:id="@+id/about"
+        android:title="关于"
+        app:showAsAction="never" />
+
+</menu>

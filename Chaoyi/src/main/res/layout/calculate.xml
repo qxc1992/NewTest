@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:chart="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_calculate_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="46dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.txusballesteros.widgets.FitChart
+                android:id="@+id/fit_chart"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:animationMode="overdraw"
+                app:backStrokeColor="#1e000000"
+                app:strokeSize="10dp"
+                app:valueStrokeColor="#ff5a64" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_today_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:text="23"
+            android:textColor="#de000000"
+            android:textSize="42sp" />
+
+        <TextView
+            android:id="@+id/tv_today_target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_today_percent"
+            android:layout_centerHorizontal="true"
+            android:text="@string/tv_today_target"
+            android:textColor="#61000000"
+            android:textSize="13sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_tide_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentTop="false"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="230dp">
+
+            <TextView
+                android:id="@+id/tv_today_focus_times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="1"
+                android:textColor="#de000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_intro_today_focus_times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_today_focus_times"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="@string/tv_intro_today_focus_times"
+                android:textColor="#8a000000"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tide_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/rl_tide_percent"
+            android:layout_alignBottom="@+id/rl_tide_percent"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/tv_today_focus_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="0"
+                android:textColor="#de000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_intro_today_focus_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_today_focus_length"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="@string/tv_intro_today_focus_length"
+                android:textColor="#8a000000"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tide_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="230dp">
+
+            <TextView
+                android:id="@+id/tv_today_focus_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="3dp"
+                android:text="30%"
+                android:textColor="#de000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_intro_today_focus_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_today_focus_percent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="@string/tv_intro_today_focus_percent"
+                android:textColor="#8a000000"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/calculate_bar_chart"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="315dp"
+            app:cardBackgroundColor="#ffffff"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="1dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_this_week_focus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/tv_this_week_focus"
+                    android:textColor="#de000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/legend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+
+
+                    <com.db.chart.view.StackBarChartView
+                        android:id="@+id/calculate_chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginStart="24dp"
+                        app:chart_barSpacing="30dp"
+                        app:chart_cornerRadius="100dp"
+                        chart:chart_fontSize="11sp"
+                        chart:chart_labelColor="#61000000" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

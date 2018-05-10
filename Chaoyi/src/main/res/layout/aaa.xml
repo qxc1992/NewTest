@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<ScrollView-->
+        <!--android:id="@+id/sv_about_scrollview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="350dp">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:scaleType="centerCrop"-->
+                    <!--android:src="@mipmap/about_bg" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_about_icon"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="116dp"-->
+                    <!--android:src="@mipmap/ic_launcher_app" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_about_name"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/iv_about_icon"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="18dp"-->
+                    <!--android:text="@string/app_name"-->
+                    <!--android:textColor="#deffffff"-->
+                    <!--android:textSize="24sp" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_about_desc"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/tv_about_name"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:text="@string/about_tide_desctiption"-->
+                    <!--android:textColor="#8bffffff"-->
+                    <!--android:textSize="14sp" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/bt_about_wechat"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/tv_about_desc"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="30dp"-->
+                    <!--android:background="@color/colorAccent"-->
+                    <!--android:text="@string/menu_root_title_feedback"-->
+                    <!--android:textColor="#ffffff"-->
+                    <!--android:textSize="14sp" />-->
+            <!--</RelativeLayout>-->
+
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_marginEnd="8dp"-->
+                <!--android:layout_marginStart="8dp"-->
+                <!--android:layout_marginTop="-36dp">-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/ll_about_card_about_layout"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginBottom="15dp"-->
+                        <!--android:layout_marginStart="16dp"-->
+                        <!--android:layout_marginTop="13dp"-->
+                        <!--android:text="@string/menu_root_title_about"-->
+                        <!--android:textColor="@color/colorAccent"-->
+                        <!--android:textSize="14sp" />-->
+                <!--</LinearLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_marginEnd="8dp"-->
+                <!--android:layout_marginStart="8dp">-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/ll_about_card_creators_layout"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginBottom="15dp"-->
+                        <!--android:layout_marginStart="16dp"-->
+                        <!--android:layout_marginTop="13dp"-->
+                        <!--android:text="@string/app_creater"-->
+                        <!--android:textColor="@color/colorAccent"-->
+                        <!--android:textSize="14sp" />-->
+                <!--</LinearLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="40dp"-->
+                <!--android:layout_marginEnd="8dp"-->
+                <!--android:layout_marginStart="8dp">-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/ll_about_card_contact_layout"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginBottom="15dp"-->
+                        <!--android:layout_marginStart="16dp"-->
+                        <!--android:layout_marginTop="13dp"-->
+                        <!--android:text="@string/app_contact_us"-->
+                        <!--android:textColor="@color/colorAccent"-->
+                        <!--android:textSize="14sp" />-->
+                <!--</LinearLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+
+    <!--<View-->
+        <!--android:id="@+id/vw_about_status_bar_holder"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:background="#00ff5a64" />-->
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:id="@+id/ab_about_appbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="#106000"-->
+        <!--android:elevation="0dp"-->
+        <!--android:theme="@style/ThemeOverlay.AppCompat.ActionBar">-->
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/tb_about_toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:background="#00ffffff"-->
+            <!--android:titleTextColor="#ffffff" />-->
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <!--<View-->
+        <!--android:id="@+id/toolbar_shadow"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_below="@+id/ab_about_appbar"-->
+        <!--android:background="@drawable/button_start" />-->
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/fl_interceptor"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:descendantFocusability="blocksDescendants" />-->
+
+    <!--<com.github.clans.android.FloatingActionMenu-->
+        <!--android:id="@+id/fm_about_android_menu"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_above="@+id/fl_interceptor"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:menu_backgroundColor="#60000000"-->
+        <!--android:menu_colorNormal="#da4336"-->
+        <!--android:menu_colorPressed="#888888"-->
+        <!--android:menu_colorRipple="#99ffffff"-->
+        <!--android:menu_icon="@drawable/android_add"-->
+        <!--android:menu_labels_style="@style/menu_labels_style"-->
+        <!--android:paddingBottom="40dp"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:paddingRight="10dp">-->
+
+        <!--<com.github.clans.android.FloatingActionButton-->
+            <!--android:id="@+id/fb_about_android_share"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:android_colorNormal="#03a9f4"-->
+            <!--android:android_colorPressed="#03a9f4"-->
+            <!--android:android_colorRipple="#03a9f4"-->
+            <!--android:android_label="@string/share_to_friend"-->
+            <!--android:android_size="1"-->
+            <!--android:src="@drawable/share_white" />-->
+
+        <!--<com.github.clans.android.FloatingActionButton-->
+            <!--android:id="@+id/fb_about_android_rate"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:android_colorNormal="#ffc107"-->
+            <!--android:android_colorPressed="#ffc107"-->
+            <!--android:android_colorRipple="#ffc107"-->
+            <!--android:android_label="@string/mark_to_us"-->
+            <!--android:android_size="1"-->
+            <!--android:src="@drawable/rate_white" />-->
+
+        <!--<com.github.clans.android.FloatingActionButton-->
+            <!--android:id="@+id/fb_about_android_weibo"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:android_colorNormal="#ff5722"-->
+            <!--android:android_colorPressed="#ff5722"-->
+            <!--android:android_colorRipple="#ff5722"-->
+            <!--android:android_label="@string/follow_us_weibo"-->
+            <!--android:android_size="1"-->
+            <!--android:src="@drawable/weibo_white" />-->
+
+        <!--<com.github.clans.android.FloatingActionButton-->
+            <!--android:id="@+id/fb_about_android_wechat"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:android_colorNormal="#4caf50"-->
+            <!--android:android_colorPressed="#4caf50"-->
+            <!--android:android_colorRipple="#4caf50"-->
+            <!--android:android_label="@string/follow_us_wechat"-->
+            <!--android:android_size="1"-->
+            <!--android:src="@drawable/weixin_white" />-->
+    <!--</com.github.clans.android.FloatingActionMenu>-->
+
+    <!--<android.support.design.widget.CoordinatorLayout-->
+        <!--android:id="@+id/snackBar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+</RelativeLayout>

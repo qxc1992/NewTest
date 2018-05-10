@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="休息">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="rest_model"
+            android:summary="每次专注完成后，会进行一次休息计时"
+            android:title="休息模式" />
+
+        <ListPreference
+            android:dependency="rest_model"
+            android:entries="@array/entries_focus_time"
+            android:entryValues="@array/entry_values_focus_time"
+            android:summary="5分钟"
+            android:title="休息时长" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="长休息">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:dependency="rest_model"
+            android:key="long_rest"
+            android:summary="休息多久后会进行一次长时间的休息"
+            android:title="长休息" />
+
+        <ListPreference
+            android:dependency="long_rest"
+            android:entries="@array/entries_focus_time"
+            android:entryValues="@array/entry_values_focus_time"
+            android:summary="4次专注"
+            android:title="多久一次常休息" />
+
+        <ListPreference
+            android:dependency="long_rest"
+            android:entries="@array/entries_focus_time"
+            android:entryValues="@array/entry_values_focus_time"
+            android:summary="15分钟"
+            android:title="长时间休息" />
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

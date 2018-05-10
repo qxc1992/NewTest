@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="entries_lang">
+        <item>Follow System</item>
+        <item>English</item>
+        <item>简体中文</item>
+        <item>繁體中文</item>
+    </string-array>
+
+    <string-array name="entries_focus_calculate">
+        <item>none</item>
+        <item>30 minutes</item>
+        <item>60 minutes</item>
+        <item>90 minutes</item>
+        <item>120 minutes</item>
+        <item>3 hours</item>
+        <item>4 hours</item>
+        <item>5 hours</item>
+        <item>6 hours</item>
+        <item>7 hours</item>
+        <item>8 hours</item>
+        <item>12 hours</item>
+        <item>16 hours</item>
+    </string-array>
+
+    <string-array name="entry_values_lang">
+        <item>auto</item>
+        <item>english</item>
+        <item>simplified_chinese</item>
+        <item>traditional_chinese</item>
+    </string-array>
+
+
+    <string-array name="entry_values_focus_time">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+    </string-array>
+
+    <string-array name="entry_values_focus_calculate">
+        <item>0</item>
+        <item>0.5</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>12</item>
+        <item>16</item>
+    </string-array>
+
+    <string-array name="entries_focus_time">
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+        <item>20 minutes</item>
+        <item>25 minutes</item>
+        <item>30 minutes</item>
+        <item>35 minutes</item>
+        <item>40 minutes</item>
+        <item>45 minutes</item>
+        <item>50 minutes</item>
+        <item>55 minutes</item>
+        <item>60 minutes</item>
+        <item>90 minutes</item>
+        <item>120 minutes</item>
+    </string-array>
+
+    <string-array name="entry_auto_focus_time">
+        <item>no limit</item>
+        <item>3 times</item>
+        <item>4 times</item>
+        <item>5 times</item>
+        <item>6 times</item>
+        <item>7 times</item>
+        <item>8 times</item>
+        <item>9 times</item>
+        <item>10 times</item>
+    </string-array>
+
+
+    <string-array name="entry_values_auto_focus_time">
+        <item>0</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+
+
+    <string-array name="time_tags">
+        <item>黎明前</item> 4-5
+        <item>晨光中</item> 6-8
+        <item>上午好</item> 9-12
+        <item>下午好</item> 12-14
+        <item>日暮里</item> 15-16
+        <item>黄昏时</item> 17-18
+        <item>晚上好</item> 19-21
+        <item>夜深了</item> 22-24
+    </string-array>
+</resources>

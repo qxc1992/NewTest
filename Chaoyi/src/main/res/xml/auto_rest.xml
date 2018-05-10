@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="休息">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:enabled="false"
+            android:summary="在关注结束后自动开始计时"
+            android:title="自动开始休息" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="专注">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="auto_rest"
+            android:summary="休息结束后自动开始下一次专注"
+            android:title="自动开始专注" />
+
+        <ListPreference
+            android:defaultValue="false"
+            android:dependency="auto_rest"
+            android:dialogTitle="多久一次长休息"
+            android:entries="@array/entry_auto_focus_time"
+            android:entryValues="@array/entry_values_focus_time"
+            android:summary="不限制次数"
+            android:title="自动专注专注周期" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

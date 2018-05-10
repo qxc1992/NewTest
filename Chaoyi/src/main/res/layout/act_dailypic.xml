@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_dailypic_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tb_dailypic_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/share_daily_qr_code" />
+
+
+    <app.mosn.zdepthshadowlayout.ZDepthShadowLayout
+        android:id="@+id/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        app:z_depth="z_depth2"
+        app:z_depth_padding="z_depth5"
+        app:z_depth_shape="rect">
+
+
+        <LinearLayout
+            android:id="@+id/container_daily"
+            android:layout_width="175dp"
+            android:layout_height="314dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="214dp">
+
+                <com.chaoyi.view.TiltView
+                    android:id="@+id/daily_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:src="@mipmap/about_bg"
+                    app:type="1" />
+
+                <RelativeLayout
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/date_frame" />
+
+
+                    <com.chaoyi.view.TypefaceTextView
+                        android:id="@+id/date_daily_day"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:textColor="@android:color/white" />
+
+                    <com.chaoyi.view.TypefaceTextView
+                        android:id="@+id/date_daily_M"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/date_daily_day"
+                        android:gravity="center"
+                        android:textColor="@android:color/white" />
+
+
+                    <com.chaoyi.view.TypefaceTextView
+                        android:id="@+id/date_daily_Y"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/date_daily_M"
+                        android:gravity="center"
+                        android:textColor="@android:color/white" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@android:color/white"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="vertical"
+                android:paddingBottom="5dp">
+
+                <com.chaoyi.view.TypefaceTextView
+                    android:id="@+id/text_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textColor="@android:color/black" />
+
+                <com.chaoyi.view.TypefaceTextView
+                    android:id="@+id/text_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/color_gray_text" />
+
+                <com.chaoyi.view.TypefaceTextView
+                    android:id="@+id/text_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textColor="@android:color/black" />
+
+                <ImageView
+                    android:id="@+id/card_qrcode"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@mipmap/card_qrcode"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </app.mosn.zdepthshadowlayout.ZDepthShadowLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/daily_share_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/android"
+        android:layout_below="@+id/android"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/daily_share"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/share" />
+
+        <TextView
+            android:id="@+id/daily_share_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/daily_share"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/share_daily_to"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/daily_download_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/android"
+        android:layout_below="@+id/android"
+        android:layout_marginEnd="65dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/daily_download"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/download" />
+
+        <TextView
+            android:id="@+id/daily_download_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/daily_download"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/share_daily_save"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

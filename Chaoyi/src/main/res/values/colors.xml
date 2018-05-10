@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="button_text_color">#ffffff</color>
+    <color name="card_background">#ffffff</color>
+    <color name="card_shadow">#10000000</color>
+    <color name="colorAccent">#ff5a64</color>
+    <color name="colorPrimary">#00ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="color_common_black">#000000</color>
+    <color name="color_common_gray">#1e000000</color>
+    <color name="color_gray">#9b9797</color>
+    <color name="color_gray_text">#a6a4a4</color>
+    <color name="color_gray_chart">#dad8d8</color>
+
+
+    <color name="rimuli">#77696767</color>
+    <color name="rain">#776bc4ed</color>
+    <color name="senlin">#776efaa4</color>
+    <color name="mingxiang">#773b3232</color>
+    <color name="coffee">#77a97516</color>
+    <color name="splitor">#b7b6b6</color>
+
+
+</resources>

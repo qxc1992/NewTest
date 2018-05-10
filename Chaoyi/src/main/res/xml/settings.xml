@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/SettingsFragment_title">
+        <Preference
+            android:key="pref_key_account"
+            android:summary="@string/SettingsFragment_content"
+            android:title="@string/SettingsFragment_value" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings_section_title_time_count">
+        <ListPreference
+            android:defaultValue="25"
+            android:dialogTitle="@string/settings_selection_title_focus_duration"
+            android:entries="@array/entries_focus_time"
+            android:entryValues="@array/entry_values_focus_time"
+            android:key="pref_key_focus_time"
+            android:summary="25分钟"
+            android:title="@string/settings_selection_title_focus_duration" />
+
+        <Preference
+            android:key="pref_key_rest"
+            android:summary="@string/settings_section_subtitle_break"
+            android:title="@string/settings_section_title_break" />
+        <Preference
+            android:key="pref_key_auto_rest"
+            android:summary="@string/settings_section_subtitle_auto_focus"
+            android:title="@string/settings_section_title_auto_focus" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="pref_key_deep_mode"
+            android:summary="@string/immersive_mode_content"
+            android:title="@string/immersive_mode_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/settings_switch_title_whitenoise">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="pref_key_play_sound"
+            android:summary="@string/settings_switch_subtitle_whitenoise"
+            android:title="@string/settings_switch_title_whitenoise" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="pref_key_sound_with_music"
+            android:summary="@string/settings_switch_subtitle_withmusic"
+            android:title="@string/settings_switch_title_withmusic" />
+
+        <Preference
+            android:dependency="pref_key_play_sound"
+            android:key="pref_key_volume"
+            android:title="@string/settings_selection_title_volume" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/settings_section_title_expert">
+        <ListPreference
+            android:defaultValue="1"
+            android:dialogTitle="@string/settings_section_title_focus_calculate"
+            android:entries="@array/entries_focus_calculate"
+            android:entryValues="@array/entry_values_focus_calculate"
+            android:key="pref_key_focus_goal"
+            android:summary="1小时"
+            android:title="@string/settings_section_title_focus_calculate" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="pref_key_screen_always_on"
+            android:summary=""
+            android:title="@string/settings_switch_title_screenalwayson" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="pref_key_use_mobile_network"
+            android:summary="@string/settings_switch_subtitle_allownetwork"
+            android:title="@string/settings_switch_title_allownetwork" />
+        <ListPreference
+            android:defaultValue="auto"
+            android:dialogTitle="@string/settings_selection_title_language"
+            android:entries="@array/entries_lang"
+            android:entryValues="@array/entry_values_lang"
+            android:key="pref_key_language"
+            android:summary="跟随系统"
+            android:title="@string/settings_selection_title_language" />
+
+        <ListPreference
+            android:key="pref_fake"
+            android:selectable="false"
+            android:summary=""
+            android:title="" />
+
+        <ListPreference
+            android:key="pref_fake"
+            android:selectable="false"
+            android:summary=""
+            android:title="" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
